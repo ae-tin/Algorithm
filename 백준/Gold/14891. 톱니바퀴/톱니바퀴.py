@@ -1,4 +1,3 @@
-
 matrix = [list(map(int,list(input()))) for _ in range(4)]
 K = int(input())
 howtoturn = [tuple(map(int, input().split())) for _ in range(K)]
