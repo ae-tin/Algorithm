@@ -2,4 +2,4 @@
 This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
 
 [![Solved.ac
-프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj={강태인})](https://solved.ac/{xodls4179})
+프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=xodls4179)](https://solved.ac/xodls4179)
