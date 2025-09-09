@@ -17,10 +17,12 @@ for test_case in range(1,T+1):
             s = sum([ cnt_carot[k] for k in carot_set[:i+1]])
             m = sum([ cnt_carot[k] for k in carot_set[i+1:j+1]])
             l = sum([ cnt_carot[k] for k in carot_set[j+1:]])
-            # 당근 개수 차이 확인 N//2보다 작아야함. 아니면 다음
+            # 최대 당근 개수 N//2보다 작아야함. 또는 비어 있는 그룹이 있으면 continue
             if max([s,m,l]) > M or min([s,m,l]) == 0: continue
+            # 당근 개수 차이 확인 및 저장
             diff = max([s,m,l]) - min([s,m,l])
             result = min([result, diff])
-    if result == 1000: result = -1
+    else:
+        if result == 1000: result = -1
             
     print(f'#{test_case} {result}')
