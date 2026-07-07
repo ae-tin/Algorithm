@@ -11,12 +11,18 @@
 #     return " ".join(jadencase)
 
 
+# def solution(s):
+#     answer = ''
+#     words = s.split(" ")    
+#     for i, word in enumerate(words):
+#         if word and not word.isdigit(): 
+#             f_letter = word[0].upper()
+#             rest_word = word[1:].lower()
+#             words[i] = f_letter + rest_word
+#     return ' '.join(words)
+
+
 def solution(s):
-    answer = ''
-    words = s.split(" ")    
-    for i, word in enumerate(words):
-        if word and not word.isdigit(): 
-            f_letter = word[0].upper()
-            rest_word = word[1:].lower()
-            words[i] = f_letter + rest_word
-    return ' '.join(words)
+    words = s.split(" ")
+    answer = [word[0].upper()+word[1:].lower() if word else "" for word in words]
+    return " ".join(answer)
